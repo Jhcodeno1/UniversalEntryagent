@@ -1,0 +1,34 @@
+# Runtime core for the Intent Router Agent web demo.
+agentscope==1.0.18
+agentscope-runtime==1.1.4
+reme-ai==0.3.1.8
+
+# Web API and HTTP clients.
+fastapi==0.136.0
+uvicorn==0.44.0
+aiofiles==24.1.0
+anyio==4.12.1
+httpx==0.28.1
+pydantic==2.13.1
+typing-extensions==4.15.0
+
+# LLM providers used by the demo/runtime.
+openai==2.32.0
+anthropic==0.96.0
+google-genai==1.73.1
+langfuse>=3.0.0
+
+# Routing, config, and runtime utilities.
+json-repair==0.59.4
+python-dotenv==1.2.2
+python-frontmatter==1.1.0
+PyYAML==6.0.3
+shortuuid==1.0.13
+loguru==0.7.3
+keyring==25.7.0
+cryptography==46.0.7
+tiktoken==0.12.0
+tokenizers==0.22.2
+
+# MCP integration is configurable in the demo.
+mcp==1.27.0

@@ -1,0 +1,62 @@
+[project]
+name = "universal-entry-agent"
+version = "0.1.0"
+description = "An intent router agent that routes tasks to tools, local agents, and MCP servers."
+requires-python = ">=3.10"
+dependencies = [
+    "agentscope==1.0.18",
+    "agentscope-runtime==1.1.4",
+    "aiofiles==24.1.0",
+    "anyio==4.12.1",
+    "cryptography==46.0.7",
+    "fastapi==0.136.0",
+    "httpx==0.28.1",
+    "json-repair==0.59.4",
+    "keyring==25.7.0",
+    "loguru==0.7.3",
+    "mcp==1.27.0",
+    "openai==2.32.0",
+    "pydantic==2.13.1",
+    "python-dotenv==1.2.2",
+    "python-frontmatter==1.1.0",
+    "PyYAML==6.0.3",
+    "reme-ai==0.3.1.8",
+    "shortuuid==1.0.13",
+    "tiktoken==0.12.0",
+    "tokenizers==0.22.2",
+    "typing-extensions==4.15.0",
+    "uvicorn==0.44.0",
+]
+
+[project.optional-dependencies]
+providers = [
+    "anthropic==0.96.0",
+    "google-genai==1.73.1",
+    "langfuse>=3.0.0",
+]
+browser = [
+    "mss==10.1.0",
+    "playwright==1.58.0",
+]
+documents = [
+    "defusedxml>=0.7.1",
+    "lxml>=5.0.0",
+    "openpyxl>=3.1.0",
+    "pandas==2.3.3",
+    "pdf2image>=1.17.0",
+    "pdfplumber>=0.11.0",
+    "pillow==12.2.0",
+    "pypdf>=5.0.0",
+]
+audio = [
+    "openai-whisper==20250625",
+]
+
+[project.scripts]
+universal-entry-agent = "universal_entry_agent.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
