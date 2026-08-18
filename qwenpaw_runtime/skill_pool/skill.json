@@ -1,0 +1,134 @@
+{
+  "schema_version": "skill-pool-manifest.v1",
+  "version": 1782955658447,
+  "skills": {
+    "browser_cdp": {
+      "name": "browser_cdp",
+      "description": "当用户明确希望连接到已运行的 Chrome 浏览器、扫描本地 CDP 端口、显式指定 `cdp_port`，或让多个 agent / 工具共享同一个浏览器时，使用本 skill。当前 browser_use 默认已使用 managed CDP 启动浏览器；如果用户不希望暴露浏览器历史、Cookies 等敏感信息，推荐改用 `private_mode=true` 的隐私模式。",
+      "version_text": "1.2",
+      "commit_text": "",
+      "source": "builtin",
+      "protected": false,
+      "requirements": {
+        "require_bins": [],
+        "require_envs": []
+      },
+      "updated_at": "2026-06-10T06:45:25.050769Z"
+    },
+    "browser_visible": {
+      "name": "browser_visible",
+      "description": "当用户需要控制 browser_use 的浏览器启动方式时，使用本 skill。当前 browser_use 默认使用 managed CDP 启动本地 Chrome/Chromium；`headed` 控制是否显示窗口，`private_mode` 控制是否禁用 CDP、改走 Playwright。",
+      "version_text": "1.2",
+      "commit_text": "",
+      "source": "builtin",
+      "protected": false,
+      "requirements": {
+        "require_bins": [],
+        "require_envs": []
+      },
+      "updated_at": "2026-06-10T06:45:25.057767Z"
+    },
+    "chat_with_agent": {
+      "name": "chat_with_agent",
+      "description": "Use this skill when you need to consult another agent, ask for help, or involve a specific agent the user asked for. | 当你需要咨询另一个 agent、寻求帮助，或用户明确要求某个 agent 参与时使用。",
+      "version_text": "1.1",
+      "commit_text": "",
+      "source": "builtin",
+      "protected": false,
+      "requirements": {
+        "require_bins": [],
+        "require_envs": []
+      },
+      "updated_at": "2026-06-10T06:45:25.070774Z"
+    },
+    "docx": {
+      "name": "docx",
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of \"Word doc\", \"word document\", \".docx\", or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a \"report\", \"memo\", \"letter\", \"template\", or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
+      "version_text": "1.1",
+      "commit_text": "",
+      "source": "builtin",
+      "protected": false,
+      "requirements": {
+        "require_bins": [],
+        "require_envs": []
+      },
+      "updated_at": "2026-06-10T06:45:25.097774Z"
+    },
+    "file_reader": {
+      "name": "file_reader",
+      "description": "Read and summarize text-based file types only. Prefer read_file for text formats; use execute_shell_command for type detection when needed. PDF/Office/images/archives are handled by other skills.",
+      "version_text": "1.2",
+      "commit_text": "",
+      "source": "builtin",
+      "protected": false,
+      "requirements": {
+        "require_bins": [],
+        "require_envs": []
+      },
+      "updated_at": "2026-06-10T06:45:25.452768Z"
+    },
+    "make_plan": {
+      "name": "make_plan",
+      "description": "面向外部计划请求场景，指导 Agent 通过 list_agents 和 chat_with_agent 向更强 Agent 请求明确、可执行、分步骤的计划，并强调计划由求助发起者执行而不是由被求助 Agent 代执行。",
+      "version_text": "1.1",
+      "commit_text": "",
+      "source": "builtin",
+      "protected": false,
+      "requirements": {
+        "require_bins": [],
+        "require_envs": []
+      },
+      "updated_at": "2026-06-10T06:45:25.476778Z"
+    },
+    "pdf": {
+      "name": "pdf",
+      "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+      "version_text": "1.1",
+      "commit_text": "",
+      "source": "builtin",
+      "protected": false,
+      "requirements": {
+        "require_bins": [],
+        "require_envs": []
+      },
+      "updated_at": "2026-06-10T06:45:25.512780Z"
+    },
+    "pptx": {
+      "name": "pptx",
+      "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
+      "version_text": "1.1",
+      "commit_text": "",
+      "source": "builtin",
+      "protected": false,
+      "requirements": {
+        "require_bins": [],
+        "require_envs": []
+      },
+      "updated_at": "2026-06-10T06:45:25.595784Z"
+    },
+    "xlsx": {
+      "name": "xlsx",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+      "version_text": "1.1",
+      "commit_text": "",
+      "source": "builtin",
+      "protected": false,
+      "requirements": {
+        "require_bins": [],
+        "require_envs": []
+      },
+      "updated_at": "2026-06-10T06:45:25.925499Z"
+    }
+  },
+  "builtin_skill_names": [
+    "browser_cdp",
+    "browser_visible",
+    "chat_with_agent",
+    "docx",
+    "file_reader",
+    "make_plan",
+    "pdf",
+    "pptx",
+    "xlsx"
+  ]
+}
