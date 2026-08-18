@@ -1,0 +1,38 @@
+[
+  {
+    "channel": "JZYY",
+    "label": "JZYY 集中运营入口",
+    "enabled": true,
+    "open_mode": "URL_TEMPLATE",
+    "url_template": "",
+    "api_url": "",
+    "method": "POST",
+    "headers": {},
+    "request_template": {
+      "channel": "{channel}",
+      "target": "{jump_target}",
+      "intent_id": "{intent_id}",
+      "intent_name": "{intent_name}"
+    },
+    "description": "集中运营系统入口。URL 模板可使用 {jump_target}、{intent_id}、{intent_name}。",
+    "updated_at": "2026-07-01T16:02:24"
+  },
+  {
+    "channel": "VTM",
+    "label": "VTM 入口",
+    "enabled": true,
+    "open_mode": "URL_TEMPLATE",
+    "url_template": "",
+    "api_url": "",
+    "method": "POST",
+    "headers": {},
+    "request_template": {
+      "channel": "{channel}",
+      "target": "{jump_target}",
+      "intent_id": "{intent_id}",
+      "intent_name": "{intent_name}"
+    },
+    "description": "VTM 系统入口。URL 模板可使用 {jump_target}、{intent_id}、{intent_name}。",
+    "updated_at": "2026-07-01T16:02:24"
+  }
+]

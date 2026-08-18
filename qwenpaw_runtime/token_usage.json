@@ -1,0 +1,95 @@
+{
+  "2026-06-18": {
+    "universal-entry-openai:GLM-5-FP8": {
+      "provider_id": "universal-entry-openai",
+      "model_name": "GLM-5-FP8",
+      "prompt_tokens": 7825258,
+      "completion_tokens": 24626,
+      "call_count": 164
+    }
+  },
+  "2026-06-22": {
+    "universal-entry-openai:GLM-5-FP8": {
+      "provider_id": "universal-entry-openai",
+      "model_name": "GLM-5-FP8",
+      "prompt_tokens": 23213,
+      "completion_tokens": 350,
+      "call_count": 4
+    },
+    "universal-entry-openai:deepseek-v4-flash": {
+      "provider_id": "universal-entry-openai",
+      "model_name": "deepseek-v4-flash",
+      "prompt_tokens": 61779,
+      "completion_tokens": 4103,
+      "call_count": 11
+    }
+  },
+  "2026-06-24": {
+    "universal-entry-openai:GLM-5-FP8": {
+      "provider_id": "universal-entry-openai",
+      "model_name": "GLM-5-FP8",
+      "prompt_tokens": 704855,
+      "completion_tokens": 6332,
+      "call_count": 100
+    }
+  },
+  "2026-06-26": {
+    "universal-entry-openai:deepseek-v4-flash": {
+      "provider_id": "universal-entry-openai",
+      "model_name": "deepseek-v4-flash",
+      "prompt_tokens": 199953,
+      "completion_tokens": 5494,
+      "call_count": 32
+    },
+    "universal-entry-openai:deepseek-v4-pro": {
+      "provider_id": "universal-entry-openai",
+      "model_name": "deepseek-v4-pro",
+      "prompt_tokens": 16728,
+      "completion_tokens": 423,
+      "call_count": 4
+    },
+    "universal-entry-openai:qwen3.7-plus": {
+      "provider_id": "universal-entry-openai",
+      "model_name": "qwen3.7-plus",
+      "prompt_tokens": 16815,
+      "completion_tokens": 200,
+      "call_count": 4
+    }
+  },
+  "2026-06-29": {
+    "universal-entry-openai:deepseek-v4-flash": {
+      "provider_id": "universal-entry-openai",
+      "model_name": "deepseek-v4-flash",
+      "prompt_tokens": 86751,
+      "completion_tokens": 3897,
+      "call_count": 18
+    }
+  },
+  "2026-06-30": {
+    "universal-entry-openai:deepseek-v4-flash": {
+      "provider_id": "universal-entry-openai",
+      "model_name": "deepseek-v4-flash",
+      "prompt_tokens": 97157,
+      "completion_tokens": 3314,
+      "call_count": 17
+    }
+  },
+  "2026-07-01": {
+    "universal-entry-openai:deepseek-v4-flash": {
+      "provider_id": "universal-entry-openai",
+      "model_name": "deepseek-v4-flash",
+      "prompt_tokens": 13936,
+      "completion_tokens": 505,
+      "call_count": 3
+    }
+  },
+  "2026-07-02": {
+    "universal-entry-openai:deepseek-v4-flash": {
+      "provider_id": "universal-entry-openai",
+      "model_name": "deepseek-v4-flash",
+      "prompt_tokens": 56020,
+      "completion_tokens": 2560,
+      "call_count": 10
+    }
+  }
+}

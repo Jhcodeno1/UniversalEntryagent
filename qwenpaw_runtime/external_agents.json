@@ -1,0 +1,18 @@
+{
+  "agents": [
+    {
+      "id": "Weather",
+      "name": "天气查询 Agent",
+      "description": "专门负责天气查询、城市天气、气温、降雨、风力、出行天气建议等问题。由本地 nanobot 项目提供 OpenAI-compatible HTTP API。",
+      "workspace_dir": "",
+      "protocol": "openai_chat_completions",
+      "base_url": "",
+      "chat_completions_url": "http://127.0.0.1:8765/api/demo/http-agents/Weather/v1/chat/completions",
+      "model": "Weather",
+      "api_key_env": "",
+      "headers": {},
+      "timeout_seconds": 120,
+      "system_prompt": ""
+    }
+  ]
+}

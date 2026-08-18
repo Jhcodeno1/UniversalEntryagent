@@ -1,0 +1,57 @@
+[
+  {
+    "id": "confidence_gate",
+    "name": "低置信度拦截",
+    "description": "模型判断不够确定时，不强行命中业务意图，避免把用户带到错误智能体或错误入口。",
+    "enabled": true,
+    "category": "JUDGEMENT",
+    "impact": "模型精判置信度阈值",
+    "priority": 100,
+    "updated_at": "2026-07-02T10:11:07",
+    "threshold": 0.55
+  },
+  {
+    "id": "rewrite_retry",
+    "name": "改写后再次识别",
+    "description": "首轮未识别准时，结合业务语境改写用户问题，再重新召回和精判一次。",
+    "enabled": true,
+    "category": "REWRITE",
+    "impact": "二次干预识别开关",
+    "priority": 90,
+    "updated_at": "2026-07-02T10:11:07"
+  },
+  {
+    "id": "rule_recall_guard",
+    "name": "召回候选保护",
+    "description": "控制一级规则召回数量和最低分，让可能相关的候选进入模型精判，同时过滤明显噪声。",
+    "enabled": true,
+    "category": "RECALL",
+    "impact": "一级规则召回数量与最低分",
+    "priority": 80,
+    "updated_at": "2026-07-02T10:11:07",
+    "min_score": 8.0,
+    "top_k": 10
+  },
+  {
+    "id": "context_completion",
+    "name": "上下文省略补全",
+    "description": "用户说“这个”“继续办理”等省略表达时，参考最近对话补全业务对象再识别。",
+    "enabled": true,
+    "category": "CONTEXT",
+    "impact": "会话上下文补全",
+    "priority": 70,
+    "updated_at": "2026-07-02T10:11:07",
+    "memory_turns": 5
+  },
+  {
+    "id": "failure_sample_capture",
+    "name": "兜底样本沉淀",
+    "description": "记录未命中、低置信度、二次识别失败的问题，方便后续补充关键词和示例问法。",
+    "enabled": true,
+    "category": "LEARNING",
+    "impact": "兜底样本池",
+    "priority": 60,
+    "updated_at": "2026-07-02T10:11:07",
+    "sample_limit": 500
+  }
+]

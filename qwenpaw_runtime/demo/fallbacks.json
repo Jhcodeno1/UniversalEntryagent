@@ -1,0 +1,38 @@
+[
+  {
+    "id": "low_confidence",
+    "name": "低置信度兜底",
+    "enabled": true,
+    "trigger": "LOW_CONFIDENCE",
+    "threshold": 0.65,
+    "action": "LLM_GENERAL_REPLY",
+    "reply": "我暂时没有匹配到明确的业务入口，已先按通用问题为你处理。",
+    "record_sample": true,
+    "priority": 10,
+    "updated_at": "2026-06-26T16:24:52"
+  },
+  {
+    "id": "second_stage_failed",
+    "name": "二次识别失败兜底",
+    "enabled": true,
+    "trigger": "SECOND_STAGE_FAILED",
+    "threshold": 0.0,
+    "action": "FIXED_REPLY",
+    "reply": "当前问题暂未匹配到可用业务服务，我已记录该问题用于后续优化。",
+    "record_sample": true,
+    "priority": 20,
+    "updated_at": "2026-06-26T16:24:52"
+  },
+  {
+    "id": "agent_call_failed",
+    "name": "Agent 调用失败兜底",
+    "enabled": true,
+    "trigger": "AGENT_CALL_FAILED",
+    "threshold": 0.0,
+    "action": "FIXED_REPLY",
+    "reply": "目标智能体服务暂时不可用，请稍后再试。",
+    "record_sample": true,
+    "priority": 30,
+    "updated_at": "2026-06-26T16:24:52"
+  }
+]
