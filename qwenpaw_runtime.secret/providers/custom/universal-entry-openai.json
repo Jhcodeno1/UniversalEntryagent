@@ -1,0 +1,35 @@
+{
+  "id": "universal-entry-openai",
+  "name": "Intent Router OpenAI-compatible",
+  "base_url": "https://api.deepseek.com",
+  "api_key": "ENC:gAAAAABqRcgZMBShBrvDesw1-HccuCi12tJRl0gRVUazWtfx2W8DwhV5MDZAa1r2gWhIM3Insk768jUY7SOhZfivK-LrGtR4xhAveXpv7Ev2jV5W04qTKurw7YN05Em5j6rbgV9BW9mG",
+  "chat_model": "OpenAIChatModel",
+  "models": [
+    {
+      "id": "deepseek-v4-flash",
+      "name": "deepseek-v4-flash",
+      "supports_multimodal": null,
+      "supports_image": null,
+      "supports_video": null,
+      "probe_source": null,
+      "is_free": false,
+      "generate_kwargs": {}
+    }
+  ],
+  "extra_models": [],
+  "api_key_prefix": "",
+  "is_local": false,
+  "freeze_url": false,
+  "require_api_key": false,
+  "is_custom": true,
+  "support_model_discovery": false,
+  "support_connection_check": true,
+  "generate_kwargs": {
+    "extra_body": {
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  "meta": {}
+}
