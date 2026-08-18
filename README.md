@@ -19,7 +19,7 @@
 万能入口agent\.venv\
 ```
 
-这样别人拿到项目后，不需要修改脚本里的固定 Python 路径。当前启动脚本已经按以下顺序查找 Python：
+当前启动脚本已经按以下顺序查找 Python：
 
 1. 环境变量 `PYTHON_EXE`
 2. 当前项目目录下的 `.venv\Scripts\python.exe`
@@ -33,7 +33,7 @@
 进入项目目录：
 
 ```powershell
-cd "D:\hundsun\公司agent项目\万能入口agent"
+cd "D:\xxx\xxx\万能入口agent"
 ```
 
 创建本项目自己的 Python 环境：
@@ -139,7 +139,7 @@ config.json -> llm
 
 ```json
 {
-  "base_url": "http://10.20.200.71:30002/v1",
+  "base_url": "xxx",
   "api_key_env": "LLM_API_KEY",
   "model": "GLM-5-FP8"
 }
@@ -177,7 +177,7 @@ config.json -> agent_registry.agents -> Weather
 ```json
 {
   "workspace_dir": "D:\\Helloagent\\nanobot",
-  "base_url": "http://127.0.0.1:11001/v1"
+  "base_url": "xx"
 }
 ```
 
