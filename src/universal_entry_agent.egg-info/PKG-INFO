@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: universal-entry-agent
+Version: 0.1.0
+Summary: An intent router agent that routes tasks to tools, local agents, and MCP servers.
+Requires-Python: >=3.10
+Requires-Dist: agentscope==1.0.18
+Requires-Dist: agentscope-runtime==1.1.4
+Requires-Dist: aiofiles==24.1.0
+Requires-Dist: anyio==4.12.1
+Requires-Dist: cryptography==46.0.7
+Requires-Dist: fastapi==0.136.0
+Requires-Dist: httpx==0.28.1
+Requires-Dist: json-repair==0.59.4
+Requires-Dist: keyring==25.7.0
+Requires-Dist: loguru==0.7.3
+Requires-Dist: mcp==1.27.0
+Requires-Dist: openai==2.32.0
+Requires-Dist: pydantic==2.13.1
+Requires-Dist: python-dotenv==1.2.2
+Requires-Dist: python-frontmatter==1.1.0
+Requires-Dist: PyYAML==6.0.3
+Requires-Dist: reme-ai==0.3.1.8
+Requires-Dist: shortuuid==1.0.13
+Requires-Dist: tiktoken==0.12.0
+Requires-Dist: tokenizers==0.22.2
+Requires-Dist: typing-extensions==4.15.0
+Requires-Dist: uvicorn==0.44.0
+Provides-Extra: providers
+Requires-Dist: anthropic==0.96.0; extra == "providers"
+Requires-Dist: google-genai==1.73.1; extra == "providers"
+Requires-Dist: langfuse>=3.0.0; extra == "providers"
+Provides-Extra: browser
+Requires-Dist: mss==10.1.0; extra == "browser"
+Requires-Dist: playwright==1.58.0; extra == "browser"
+Provides-Extra: documents
+Requires-Dist: defusedxml>=0.7.1; extra == "documents"
+Requires-Dist: lxml>=5.0.0; extra == "documents"
+Requires-Dist: openpyxl>=3.1.0; extra == "documents"
+Requires-Dist: pandas==2.3.3; extra == "documents"
+Requires-Dist: pdf2image>=1.17.0; extra == "documents"
+Requires-Dist: pdfplumber>=0.11.0; extra == "documents"
+Requires-Dist: pillow==12.2.0; extra == "documents"
+Requires-Dist: pypdf>=5.0.0; extra == "documents"
+Provides-Extra: audio
+Requires-Dist: openai-whisper==20250625; extra == "audio"

@@ -1,0 +1,2 @@
+[console_scripts]
+universal-entry-agent = universal_entry_agent.__main__:main
