@@ -1,0 +1,56 @@
+{
+  "schema_version": "workspace-skill-manifest.v1",
+  "version": 1782958912505,
+  "skills": {
+    "chat_with_agent": {
+      "enabled": true,
+      "channels": [
+        "all"
+      ],
+      "source": "builtin",
+      "metadata": {
+        "name": "chat_with_agent",
+        "description": "Use this skill when you need to consult another agent, ask for help, or involve a specific agent the user asked for. | 当你需要咨询另一个 agent、寻求帮助，或用户明确要求某个 agent 参与时使用。",
+        "version_text": "1.1",
+        "commit_text": "",
+        "source": "builtin",
+        "protected": false,
+        "requirements": {
+          "require_bins": [],
+          "require_envs": []
+        },
+        "updated_at": "2026-06-10T06:45:25.070774Z"
+      },
+      "requirements": {
+        "require_bins": [],
+        "require_envs": []
+      },
+      "updated_at": "2026-06-10T06:45:25.070774Z"
+    },
+    "make_plan": {
+      "enabled": true,
+      "channels": [
+        "all"
+      ],
+      "source": "builtin",
+      "metadata": {
+        "name": "make_plan",
+        "description": "面向外部计划请求场景，指导 Agent 通过 list_agents 和 chat_with_agent 向更强 Agent 请求明确、可执行、分步骤的计划，并强调计划由求助发起者执行而不是由被求助 Agent 代执行。",
+        "version_text": "1.1",
+        "commit_text": "",
+        "source": "builtin",
+        "protected": false,
+        "requirements": {
+          "require_bins": [],
+          "require_envs": []
+        },
+        "updated_at": "2026-06-10T06:45:25.476778Z"
+      },
+      "requirements": {
+        "require_bins": [],
+        "require_envs": []
+      },
+      "updated_at": "2026-06-10T06:45:25.476778Z"
+    }
+  }
+}

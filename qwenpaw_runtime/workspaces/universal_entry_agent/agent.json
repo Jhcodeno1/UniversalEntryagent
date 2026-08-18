@@ -1,0 +1,145 @@
+{
+  "id": "universal_entry_agent",
+  "name": "意图路由 Agent",
+  "description": "分析用户意图，拆解任务，调用合适的子智能体、工具或 MCP，并汇总结果统一回复。",
+  "workspace_dir": "D:\\hundsun\\公司agent项目\\万能入口agent\\qwenpaw_runtime\\workspaces\\universal_entry_agent",
+  "active_model": {
+    "provider_id": "universal-entry-openai",
+    "model": "deepseek-v4-flash"
+  },
+  "language": "zh",
+  "system_prompt_files": [
+    "AGENTS.md",
+    "PROFILE.md"
+  ],
+  "mcp": {
+    "clients": {}
+  },
+  "tools": {
+    "builtin_tools": {
+      "browser_use": {
+        "name": "browser_use",
+        "enabled": false,
+        "description": ""
+      },
+      "business_intent_router": {
+        "name": "business_intent_router",
+        "enabled": true,
+        "description": ""
+      },
+      "chat_with_agent": {
+        "name": "chat_with_agent",
+        "enabled": true,
+        "description": ""
+      },
+      "check_agent_task": {
+        "name": "check_agent_task",
+        "enabled": true,
+        "description": ""
+      },
+      "delegate_external_agent": {
+        "name": "delegate_external_agent",
+        "enabled": false,
+        "description": ""
+      },
+      "desktop_screenshot": {
+        "name": "desktop_screenshot",
+        "enabled": false,
+        "description": ""
+      },
+      "edit_file": {
+        "name": "edit_file",
+        "enabled": true,
+        "description": ""
+      },
+      "execute_shell_command": {
+        "name": "execute_shell_command",
+        "enabled": false,
+        "description": ""
+      },
+      "get_current_time": {
+        "name": "get_current_time",
+        "enabled": true,
+        "description": ""
+      },
+      "get_token_usage": {
+        "name": "get_token_usage",
+        "enabled": true,
+        "description": ""
+      },
+      "glob_search": {
+        "name": "glob_search",
+        "enabled": true,
+        "description": ""
+      },
+      "grep_search": {
+        "name": "grep_search",
+        "enabled": true,
+        "description": ""
+      },
+      "list_agents": {
+        "name": "list_agents",
+        "enabled": true,
+        "description": ""
+      },
+      "read_file": {
+        "name": "read_file",
+        "enabled": true,
+        "description": ""
+      },
+      "send_file_to_user": {
+        "name": "send_file_to_user",
+        "enabled": false,
+        "description": ""
+      },
+      "set_user_timezone": {
+        "name": "set_user_timezone",
+        "enabled": true,
+        "description": ""
+      },
+      "submit_to_agent": {
+        "name": "submit_to_agent",
+        "enabled": true,
+        "description": ""
+      },
+      "view_image": {
+        "name": "view_image",
+        "enabled": false,
+        "description": ""
+      },
+      "view_video": {
+        "name": "view_video",
+        "enabled": false,
+        "description": ""
+      },
+      "write_file": {
+        "name": "write_file",
+        "enabled": true,
+        "description": ""
+      }
+    }
+  },
+  "security": {
+    "tool_guard": {
+      "enabled": false
+    },
+    "skill_scanner": {
+      "mode": "warn"
+    }
+  },
+  "running": {
+    "max_iters": 8,
+    "auto_continue_on_text_only": false,
+    "memory_manager_backend": "remelight",
+    "memory_summary": {
+      "memory_summary_enabled": true,
+      "memory_prompt_enabled": true,
+      "force_memory_search": false,
+      "rebuild_memory_index_on_start": false,
+      "recursive_file_watcher": true
+    },
+    "context_compact": {
+      "context_compact_enabled": true
+    }
+  }
+}
